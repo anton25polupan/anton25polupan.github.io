@@ -1,0 +1,357 @@
+body *:focus {
+  outline: none;
+}
+
+body img {
+  width: 100%;
+}
+
+.services .btn, .l_works .btn, .p_plan .btn, .blog .btn {
+  background: transparent;
+  color: black;
+  border: 1px black solid;
+  border-radius: 0%;
+  text-transform: uppercase;
+}
+
+.services .btn:focus, .l_works .btn:focus, .p_plan .btn:focus, .blog .btn:focus {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .navbar {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+header .navbar .form-control {
+  border: 2px solid grey;
+  border-radius: 30px;
+}
+
+header .navbar .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: grey;
+}
+
+header .navbar .btn {
+  margin-left: -15%;
+}
+
+header .navbar .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: none;
+  color: grey;
+}
+
+header .bg {
+  position: relative;
+  background: url(../img/photo_2020-10-08_16-45-31.jpg), linear-gradient(90deg, #000, #fff), linear-gradient(135deg, #fff, #000) center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  background-blend-mode: multiply;
+}
+
+header .bg h1 {
+  font-size: 60px;
+  color: white;
+}
+
+header .bg h2 {
+  font-size: 22px;
+  color: white;
+}
+
+header .bg button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  font-style: 'Roboto';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+header .bg button:hover {
+  background: #00897b;
+  border: 2px solid #00897b;
+}
+
+header .bg .arrow {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  display: block;
+  bottom: 7%;
+  left: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.description h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+
+.description h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+.description .card-group .card {
+  border: none;
+}
+
+.description .card-group .card .pict_1 {
+  background: url(../img/css_sprites_about.png);
+  width: 70px;
+  height: 63px;
+  background-position: -30px -150px;
+  margin: 0 auto;
+}
+
+.description .card-group .card .pict_2 {
+  background: url(../img/css_sprites_about.png);
+  width: 70px;
+  height: 63px;
+  background-position: -30px -30px;
+  margin: 0 auto;
+}
+
+.description .card-group .card .pict_3 {
+  background: url(../img/css_sprites_about.png);
+  width: 70px;
+  height: 63px;
+  background-position: -160px -30px;
+  margin: 0 auto;
+}
+
+.description .card-group .card:hover {
+  background: #d6b3b3;
+}
+
+.services {
+  background: #e4fdf9;
+}
+
+.services .pict_4 {
+  background: url(../img/css_sprites_about.png);
+  width: 56px;
+  height: 62px;
+  background-position: -277px -30px;
+  margin: 0 auto;
+}
+
+.services .card {
+  border: none;
+}
+
+.services .card:hover {
+  background: #00897b;
+  color: white;
+  -webkit-box-shadow: 0px 6px 26px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 6px 26px -4px rgba(0, 0, 0, 0.75);
+}
+
+.services .card:hover .btn {
+  background: #00897b;
+  color: white;
+  border: 1px white solid;
+}
+
+.l_works .btn:hover {
+  background: #00897b;
+  color: white;
+  border: 1px white solid;
+}
+
+.l_works .card {
+  position: relative;
+  border: none;
+  background: #000;
+}
+
+.l_works .card .card_info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.l_works .card:hover .card_info {
+  opacity: 1;
+}
+
+.l_works .card:hover img {
+  opacity: 0.5;
+}
+
+.p_plan {
+  background: #f0f1f1;
+}
+
+.p_plan .btn:hover {
+  background: #00897b;
+  color: white;
+  border: 1px white solid;
+}
+
+.p_plan .card-body {
+  background: linear-gradient(176deg, #3949ab 38%, #fff 0%);
+  border: none;
+}
+
+.p_plan .card-body h5 {
+  color: #fff;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 25px;
+}
+
+.p_plan .card-body p {
+  color: #fff;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 17px;
+}
+
+.p_plan .card-body p .dollar {
+  vertical-align: top;
+  letter-spacing: 4px;
+  line-height: 2.5;
+  font-size: 25px;
+}
+
+.p_plan .card-body p span {
+  font-size: 50px;
+}
+
+.p_plan .card-body li {
+  margin-bottom: 2rem;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #bfbfbf;
+  font-family: 'Open Sans';
+  font-size: 17px;
+}
+
+.p_plan .card-body:hover {
+  -webkit-box-shadow: 0px 6px 26px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 6px 26px -4px rgba(0, 0, 0, 0.75);
+}
+
+.owl-theme .owl-stage-outer {
+  margin-bottom: 3rem;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #00897b;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #3949ab;
+}
+
+.owl-theme .card {
+  border: none;
+}
+
+.owl-theme .card .fab, .owl-theme .card .fas {
+  background: #f0f1f1;
+  color: #00897b;
+  font-size: 27px;
+  border-radius: 15%;
+}
+
+.owl-theme .card .fab:hover, .owl-theme .card .fas:hover {
+  color: #fff;
+  background: #3949ab;
+}
+
+.blog {
+  background: #e4fdf9;
+}
+
+.blog a {
+  color: #000;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.blog a:hover {
+  color: #98ccc5;
+}
+
+.blog .far {
+  font-size: 20px;
+}
+
+.blog .info_dates p {
+  font-weight: bold;
+}
+
+.blog .btn:hover {
+  background: #00897b;
+  color: white;
+  border: 1px white solid;
+}
+
+.contact {
+  background: url(../img/people.jpg), linear-gradient(90deg, #000, #fff), linear-gradient(135deg, #fff, #000) center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.contact p {
+  color: #fff;
+}
+
+.contact .card {
+  background: transparent;
+  border: none;
+}
+
+.contact .card i {
+  font-size: 45px;
+  color: #fff;
+  background: #3949ab;
+  border-radius: 50%;
+}
+
+.contact .card a {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Open Sans' sans-serif;
+  text-decoration: none;
+}
+
+.contact .email a + a {
+  white-space: nowrap;
+}
+
+.contact .btn {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact input {
+  padding: 8% 2%;
+}
+
+footer h5 {
+  font-size: 20px;
+  font-family: 'Roboto' sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */

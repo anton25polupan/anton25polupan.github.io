@@ -1,0 +1,322 @@
+body{
+    *:focus{
+        outline: none;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+%btn_clear{
+        background: transparent;
+        color: black;
+        border:1px black solid;
+        border-radius: 0%;
+        text-transform: uppercase;
+        &:focus{
+            background:none;
+            box-shadow:none;
+            }
+}   
+ header{   
+    .navbar{
+        font-family:'Open Sans', sans-serif;
+        font-size: 16px;
+        .form-control{
+            border: 2px solid grey;
+            border-radius: 30px;
+                &:focus{
+                    box-shadow: none;
+                    border-color: grey;
+                }
+            }
+        .btn{
+        margin-left:-15%;
+        &:focus{
+            box-shadow: none;
+            border-color:none;
+            color:grey; 
+            }
+        }
+    }
+    .bg{
+        position: relative;
+        background: url(../img/photo_2020-10-08_16-45-31.jpg),linear-gradient(90deg, #000, #fff),
+        linear-gradient(135deg, #fff, #000) center;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fff;
+        background-blend-mode:multiply;
+        h1{
+            font-size: 60px;
+            color: white;
+        }
+        h2{
+            font-size: 22px;
+            color: white;
+        }
+        button{
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            font-style: 'Roboto';
+            font-size: 20px;
+            text-transform: uppercase;
+            &:hover{
+                background: #00897b;
+                border:2px solid #00897b;
+            }
+        }
+        .arrow{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-bottom: 3px solid white;
+            border-right: 3px solid white;
+            display: block;
+            bottom: 7%;
+            left: 50%;
+            transform:rotate(45deg);
+        }
+    } 
+ }
+ .description{
+     h2{
+        font-family:'Open Sans', sans-serif;
+        font-size: 30px;
+     }
+     h3{
+        font-family:'Open Sans', sans-serif;
+        font-size: 15px; 
+     }
+     .card-group{
+        .card{
+            border: none;
+            .pict_1{
+                background: url(../img/css_sprites_about.png);
+                width: 70px;
+                height: 63px;
+                background-position: -30px -150px;
+                margin: 0 auto;
+            }
+            .pict_2{
+                background: url(../img/css_sprites_about.png);
+                width: 70px;
+                height: 63px;
+                background-position: -30px -30px;
+                margin: 0 auto;
+            }
+            .pict_3{
+                background: url(../img/css_sprites_about.png);
+                width: 70px;
+                height: 63px;
+                background-position: -160px -30px;
+                margin: 0 auto;
+            }
+         &:hover{
+             background: #d6b3b3;
+         }       
+        }
+     }    
+ }
+ .services{
+    background: #e4fdf9;
+    .pict_4{
+        background: url(../img/css_sprites_about.png);
+        width: 56px;
+        height: 62px;
+        background-position: -277px -30px;
+        margin: 0 auto;
+    }
+    .btn{
+        @extend %btn_clear;
+        } 
+    .card{
+        border: none;
+        &:hover{
+            background: #00897b;
+            color: white;
+            box-shadow: 0px 6px 26px -4px rgba(0,0,0,0.75);
+            }
+        &:hover .btn{
+            background: #00897b;
+            color: white;
+            border:1px white solid;
+            }    
+        }            
+    }
+.l_works{
+    .btn{
+        @extend %btn_clear;
+        &:hover{
+            background: #00897b;
+            color: white;
+            border:1px white solid;
+            }
+        }
+    .card{
+        position: relative;
+        border:none;
+        background: #000;
+        .card_info{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity:0;
+            z-index:1;
+            text-align: center;
+            color: #fff;
+            transform: translate3d(-50%,-50%, 0);
+        }
+        &:hover .card_info{
+            opacity: 1;
+        }
+        &:hover img{
+            opacity: 0.5;
+        }    
+    }     
+}
+.p_plan{
+    background: #f0f1f1;
+    .btn{
+        @extend %btn_clear;
+        &:hover{
+            background: #00897b;
+            color: white;
+            border:1px white solid;
+        }
+    }
+    .card-body{
+        background: linear-gradient(176deg, #3949ab 38%,#fff 0%);
+        border: none;
+        h5{
+            color: #fff;
+            font-family: 'Open Sans' sans-serif;
+            font-size: 25px; 
+        }
+        p{
+            color: #fff;
+            font-family: 'Open Sans' sans-serif;
+            font-size: 17px;
+            .dollar{
+                vertical-align: top;
+                letter-spacing: 4px;
+                line-height: 2.5;
+                font-size: 25px;
+            }
+            span{
+                font-size: 50px; 
+            }
+        }
+        li{
+            margin-bottom: 2rem;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #bfbfbf;
+            font-family: 'Open Sans';
+            font-size: 17px;
+        }
+        &:hover{
+            box-shadow: 0px 6px 26px -4px rgba(0,0,0,0.75);
+        }
+    }
+}
+
+.owl-theme{
+    .owl-stage-outer{
+        margin-bottom: 3rem;
+    }
+    .owl-dots .owl-dot span{
+        background: #00897b;
+    }
+    .owl-dots .owl-dot.active span{
+        background: #3949ab;
+    }
+    .card{
+        border: none;
+        .fab,.fas{
+            background: #f0f1f1;
+            color: #00897b;
+            font-size: 27px;
+            border-radius: 15%;
+            &:hover{
+                color:#fff;
+                background: #3949ab;
+            }
+        }
+    }    
+}
+.blog{
+    background:#e4fdf9;
+    a{
+        color: #000;
+        font-size: 25px;
+        text-decoration: none;
+        &:hover{
+            color: #98ccc5;
+        }
+    }
+    .far{
+        font-size: 20px;
+    }
+    .info_dates{
+        p{
+            font-weight: bold;
+        }
+    }
+    .btn{
+        @extend %btn_clear;
+        &:hover{
+            background: #00897b;
+            color: white;
+            border:1px white solid;
+        }
+    }
+}
+.contact{
+    background: url(../img/people.jpg), linear-gradient(90deg, #000, #fff),
+    linear-gradient(135deg, #fff, #000) center;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-attachment: fixed;
+    h2{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+    }    
+    .card{
+        background: transparent;
+        border: none;
+        i{
+            font-size: 45px;
+            color: #fff;
+            background: #3949ab;
+            border-radius: 50%;
+        }
+        a{
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Open Sans' sans-serif;
+            text-decoration: none;
+        }
+    }
+    .email{
+        a+a{
+            white-space: nowrap;
+        }
+    }
+    .btn{
+        font-weight: bold;
+        text-transform: uppercase;;
+         
+    } 
+    input{
+        padding: 8% 2%;
+    }  
+}
+footer{
+    h5{
+        font-size: 20px;
+        font-family: 'Roboto' sans-serif;  
+    } 
+}
