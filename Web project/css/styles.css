@@ -47,6 +47,13 @@ header .navbar .btn:focus {
   color: grey;
 }
 
+header .navbar input[type='search']::-webkit-search-decoration,
+header .navbar input[type='search']::-webkit-search-cancel-button,
+header .navbar input[type='search']::-webkit-search-results-button,
+header .navbar input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
 header .bg {
   position: relative;
   background: url(../img/photo_2020-10-08_16-45-31.jpg), linear-gradient(90deg, #000, #fff), linear-gradient(135deg, #fff, #000) center;
