@@ -296,7 +296,6 @@ header{
                 span{
                     color: #FF2E63;
                 }
-                // padding-bottom: 400px;
             }
             .btn__enter{
                 display: block;
@@ -362,7 +361,8 @@ header{
     .container{
         @extend %container;
         .section__title{
-            @extend %section__title; 
+            @extend %section__title;
+            text-align:center; 
             @media screen and (max-width:1200px) {
                 padding-top: 126px;         
               }
@@ -442,6 +442,7 @@ header{
         @extend %container;
         .section__title{
             @extend %section__title;
+            text-align:center;
         } 
         @media screen and (max-width:1200px) {
             margin-bottom: 0;;       
@@ -521,6 +522,7 @@ header{
         @extend %container;
         .section__title{
             @extend %section__title;
+            text-align:center;
             padding-top: 0;  
             @media screen and (max-width:1200px) {
                 padding-top: 0;       
@@ -615,7 +617,8 @@ header{
     .container{
         @extend %container;
         .section__title{
-            @extend %section__title
+            @extend %section__title;
+            text-align:center;
         }
         p{
             line-height: 26px;

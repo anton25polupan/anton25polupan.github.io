@@ -453,6 +453,10 @@ header .header__intro .intro__inner-img img {
   }
 }
 
+.section-competition .container .section__title {
+  text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
   .section-competition .container .section__title {
     padding-top: 126px;
@@ -529,6 +533,10 @@ header .header__intro .intro__inner-img img {
 .section-reviews {
   background-color: rgba(52, 108, 217, 0.12);
   margin-bottom: 100px;
+}
+
+.section-reviews .container .section__title {
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -641,6 +649,7 @@ header .header__intro .intro__inner-img img {
 }
 
 .section-winners .container .section__title {
+  text-align: center;
   padding-top: 0;
 }
 
@@ -751,6 +760,10 @@ header .header__intro .intro__inner-img img {
   text-align: center;
   margin-bottom: 20px;
   font-size: 20px;
+}
+
+.section-words .container .section__title {
+  text-align: center;
 }
 
 .section-words .container p {
