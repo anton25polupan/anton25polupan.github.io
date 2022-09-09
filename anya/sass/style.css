@@ -541,12 +541,12 @@ header .header__intro .intro__inner-img img {
 }
 
 @media screen and (max-width: 1200px) {
-  .section-reviews .container {
+  .section-reviews {
     margin-bottom: 0;
   }
 }
 
-.section-reviews .container .owl-theme {
+.section-reviews .owl-theme {
   position: relative;
   width: auto;
   display: -webkit-box;
@@ -557,31 +557,31 @@ header .header__intro .intro__inner-img img {
           justify-content: center;
 }
 
-.section-reviews .container .owl-theme .owl-stage-outer {
+.section-reviews .owl-theme .owl-stage-outer {
   margin-bottom: 10px;
 }
 
-.section-reviews .container .owl-theme .owl-dots {
+.section-reviews .owl-theme .owl-dots {
   position: absolute;
   bottom: 79px;
   left: 342px;
 }
 
 @media screen and (max-width: 1200px) {
-  .section-reviews .container .owl-theme .owl-dots {
+  .section-reviews .owl-theme .owl-dots {
     display: none;
   }
 }
 
-.section-reviews .container .owl-theme .owl-dots .owl-dot span {
+.section-reviews .owl-theme .owl-dots .owl-dot span {
   background: #f88ca7;
 }
 
-.section-reviews .container .owl-theme .owl-dots .owl-dot.active span {
+.section-reviews .owl-theme .owl-dots .owl-dot.active span {
   background: #FF2E63;
 }
 
-.section-reviews .container .owl-theme .reviews__body {
+.section-reviews .owl-theme .reviews__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,7 +591,7 @@ header .header__intro .intro__inner-img img {
 }
 
 @media screen and (max-width: 1074px) {
-  .section-reviews .container .owl-theme .reviews__body {
+  .section-reviews .owl-theme .reviews__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -602,7 +602,7 @@ header .header__intro .intro__inner-img img {
   }
 }
 
-.section-reviews .container .owl-theme .reviews__body .reviews__info {
+.section-reviews .owl-theme .reviews__body .reviews__info {
   margin: 0 auto;
   text-align: center;
   font-style: normal;
@@ -613,16 +613,16 @@ header .header__intro .intro__inner-img img {
 }
 
 @media screen and (max-width: 1074px) {
-  .section-reviews .container .owl-theme .reviews__body .reviews__info {
+  .section-reviews .owl-theme .reviews__body .reviews__info {
     padding-top: 0;
   }
 }
 
-.section-reviews .container .owl-theme .reviews__body .reviews__info p + p + p + p + p {
+.section-reviews .owl-theme .reviews__body .reviews__info p + p + p + p + p {
   margin-bottom: 30px;
 }
 
-.section-reviews .container .owl-theme .reviews__body .reviews__info .reviews__name {
+.section-reviews .owl-theme .reviews__body .reviews__info .reviews__name {
   margin: 0;
   font-style: normal;
   font-weight: normal;
@@ -633,18 +633,18 @@ header .header__intro .intro__inner-img img {
 }
 
 @media screen and (max-width: 1074px) {
-  .section-reviews .container .owl-theme .reviews__body .reviews__info .reviews__name {
+  .section-reviews .owl-theme .reviews__body .reviews__info .reviews__name {
     margin-bottom: 40px;
   }
 }
 
-.section-reviews .container .owl-theme .reviews__body .reviews__photo {
+.section-reviews .owl-theme .reviews__body .reviews__photo {
   margin-top: 20px;
   width: 50%;
 }
 
 @media screen and (max-width: 1074px) {
-  .section-reviews .container .owl-theme .reviews__body .reviews__photo {
+  .section-reviews .owl-theme .reviews__body .reviews__photo {
     width: 80%;
     margin: 40px;
     overflow: hidden;
