@@ -368,6 +368,7 @@ header .header__intro .intro__inner-info .intro__subtitle {
 @media screen and (max-width: 1200px) {
   header .header__intro .intro__inner-info .intro__subtitle {
     text-align: center;
+    font-size: 30px;
     margin-right: 0;
   }
 }
