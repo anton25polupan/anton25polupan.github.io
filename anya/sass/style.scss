@@ -512,7 +512,8 @@ header{
                     width: 50%;
                     @media screen and (max-width:1074px) {
                         width: 80%;
-                        margin: 40px;    
+                        margin: 40px;
+                        overflow: hidden;    
                        }
                 } 
             }
