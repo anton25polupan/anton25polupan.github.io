@@ -473,7 +473,7 @@ header{
             }
             .reviews__body{
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 @media screen and (max-width:1074px) {
                     flex-direction:column-reverse;
                     align-items: center;     
@@ -509,7 +509,7 @@ header{
                     margin-top: 20px;
                     width: 50%;
                     @media screen and (max-width:1074px) {
-                        width: 100%;
+                        width: 60%;
                         margin: 40px;     
                        }
                 } 
