@@ -644,7 +644,7 @@ header .header__intro .intro__inner-img img {
 
 @media screen and (max-width: 1074px) {
   .section-reviews .container .owl-theme .reviews__body .reviews__photo {
-    width: 60%;
+    width: 70%;
     margin: 40px;
   }
 }
