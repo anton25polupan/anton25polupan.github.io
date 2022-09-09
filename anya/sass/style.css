@@ -646,6 +646,7 @@ header .header__intro .intro__inner-img img {
   .section-reviews .container .owl-theme .reviews__body .reviews__photo {
     width: 70%;
     margin: 40px;
+    overflow: hidden;
   }
 }
 
