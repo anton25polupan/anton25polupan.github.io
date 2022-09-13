@@ -18,6 +18,7 @@
 
 .container .content__mobile {
   display: none;
+  width: 85%;
 }
 
 @media (max-width: 1112px) {
@@ -85,18 +86,56 @@
   .container .content__mobile .content__control-top .sidebar__btn span:nth-of-type(3) {
     top: calc(50% + 5px);
   }
-  .container .content__mobile .content__control-top a {
+  .container .content__mobile .content__control-top form {
+    width: 100%;
+    max-width: 123px;
     position: relative;
-    padding: 4px 27px 7px 96px;
+  }
+  .container .content__mobile .content__control-top form input {
+    width: 127%;
+    background: transparent;
     border: 1px solid #DB9351;
     margin: 0;
-    color: #DB9351;
+    padding: 7px 27px 7px 0;
+    color: #fff;
+    text-align: right;
   }
-  .container .content__mobile .content__control-top a::before {
+  .container .content__mobile .content__control-top form input::-webkit-input-placeholder {
+    color: #DB9351;
+    font-family: 'Circe Regular';
+    font-size: 14px;
+  }
+  .container .content__mobile .content__control-top form input:-ms-input-placeholder {
+    color: #DB9351;
+    font-family: 'Circe Regular';
+    font-size: 14px;
+  }
+  .container .content__mobile .content__control-top form input::-ms-input-placeholder {
+    color: #DB9351;
+    font-family: 'Circe Regular';
+    font-size: 14px;
+  }
+  .container .content__mobile .content__control-top form input::placeholder {
+    color: #DB9351;
+    font-family: 'Circe Regular';
+    font-size: 14px;
+  }
+  .container .content__mobile .content__control-top form input:focus {
+    outline: 1px solid #DB9351;
+  }
+  .container .content__mobile .content__control-top form span {
+    position: absolute;
+    top: 0.99rem;
+    right: -50px;
+    width: 9px;
+    height: 1px;
+    background: #DB9351;
+  }
+  .container .content__mobile .content__control-top form span::before {
     content: "";
     position: absolute;
-    top: 0.67rem;
-    right: 12px;
+    top: -2px;
+    right: 0px;
     width: 4px;
     height: 4px;
     border-bottom: 1px solid #DB9351;
@@ -105,15 +144,6 @@
     border-top: none;
     -webkit-transform: rotate(310deg);
             transform: rotate(310deg);
-  }
-  .container .content__mobile .content__control-top a::after {
-    content: "";
-    position: absolute;
-    top: 0.77rem;
-    right: 12px;
-    width: 9px;
-    height: 1px;
-    background: #DB9351;
   }
   .container .content__mobile .content__control-top .control__list {
     display: -webkit-box;
@@ -140,7 +170,7 @@
   }
 }
 
-@media (max-width: 1112px) and (max-width: 1112px) {
+@media (max-width: 1112px) and (max-width: 753px) {
   .container .content__mobile .content__control-top .control__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -160,9 +190,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -195,7 +222,7 @@
     content: "";
     position: absolute;
     top: -10px;
-    right: 28px;
+    right: 59px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -247,5 +274,24 @@
         -ms-flex: 2;
             flex: 2;
   }
+}
+
+.container .content__control-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content__control-bottom ul li {
+  margin-right: 15px;
+}
+
+.container .content__control-bottom ul li:last-child {
+  margin-right: 0;
+}
+
+.container .content__control-bottom ul .next_arrow {
+  -ms-flex-preferred-size: 7%;
+      flex-basis: 7%;
 }
 /*# sourceMappingURL=style_mobile.css.map */

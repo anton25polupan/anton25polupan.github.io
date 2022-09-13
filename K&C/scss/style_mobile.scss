@@ -16,6 +16,7 @@
     }
     .content__mobile{
         display: none;
+        width: 85%;
         @media (max-width: 1112px) {
             display: block;
             margin: 0 30px;
@@ -64,35 +65,49 @@
                       }
                     } 
                   }
-                a{
+                  form{
+                    width: 100%;
+                    max-width: 123px;
                     position: relative;
-                    padding: 4px 27px 7px 96px;
-                    border: 1px solid #DB9351;
-                    margin: 0;
-                    color: #DB9351;
-                    &::before{
-                        content:"";
+                    input{
+                        width: 127%;
+                        background: transparent;
+                        border: 1px solid #DB9351;
+                        margin: 0;
+                        padding: 7px 27px 7px 0;
+                        color: #fff;
+                        text-align: right;
+                        &::placeholder{
+                            color: #DB9351;
+                            font-family: 'Circe Regular';
+                            font-size: 14px;
+                        }
+                        &:focus{
+                            outline: 1px solid #DB9351;
+                        }
+                    } 
+                    span{
                         position: absolute;
-                        top: 0.67rem;
-                        right: 12px;
-                        width: 4px;
-                        height: 4px;
-                        border-bottom: 1px solid #DB9351;
-                        border-right: 1px solid #DB9351;
-                        border-left: none;
-                        border-top: none;
-                        transform: rotate(310deg);
-                    }
-                    &::after{
-                        content:"";
-                        position: absolute;
-                        top: 0.77rem;
-                        right: 12px;
+                        top: 0.99rem;
+                        right: -50px;
                         width: 9px;
                         height: 1px;
                         background:#DB9351;
-                    }
-                }
+                        &::before{
+                            content:"";
+                            position: absolute;
+                            top: -2px;
+                            right: 0px;
+                            width: 4px;
+                            height: 4px;
+                            border-bottom: 1px solid #DB9351;
+                            border-right: 1px solid #DB9351;
+                            border-left: none;
+                            border-top: none;
+                            transform: rotate(310deg);
+                        }
+                    } 
+                } 
                 .control__list{
                     display: flex;
                     justify-content:space-between;
@@ -111,7 +126,7 @@
                             margin: 0;
                         }
                     }
-                    @media (max-width: 1112px) {
+                    @media (max-width: 753px) {
                         flex-direction: column;
                         li{
                             margin-bottom: 10px;
@@ -126,7 +141,6 @@
                 .messages_mobile-list{
                     ul{
                        display: flex; 
-                       flex: 1;
                        justify-content: space-between;
                        padding: 20px 0;
                        border: 1px solid #242424;
@@ -154,7 +168,7 @@
                                     content: "";
                                     position: absolute;
                                     top: -10px;
-                                    right: 28px;
+                                    right: 59px;
                                     width: 8px;
                                     height: 8px;
                                     border-radius:50%;
@@ -196,8 +210,22 @@
                             }
                         }
                     } 
-                }  
+                } 
             }
+        }
+    }
+    .content__control-bottom{
+        ul{
+            display: flex;
+            li{
+                margin-right: 15px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            .next_arrow{
+                flex-basis: 7%;
+            } 
         }
     }
 }

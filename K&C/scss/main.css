@@ -354,25 +354,4 @@ body a {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
-
-@media (max-width: 1112px) {
-  .container .content__control-bottom {
-    margin-left: 50px;
-  }
-  .container .content__control-bottom ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .container .content__control-bottom ul li {
-    margin-right: 15px;
-  }
-  .container .content__control-bottom ul li:last-child {
-    margin-right: 0;
-  }
-  .container .content__control-bottom ul .next_arrow {
-    -ms-flex-preferred-size: 7%;
-        flex-basis: 7%;
-  }
-}
 /*# sourceMappingURL=main.css.map */
