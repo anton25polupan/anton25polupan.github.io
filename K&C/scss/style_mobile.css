@@ -1,9 +1,18 @@
 @media (max-width: 1112px) {
-  .container {
-    width: 100%;
-  }
   .container .sidebar {
-    display: fixed;
+    position: absolute;
+    top: 94px;
+    left: -250px;
+    z-index: 2;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+  }
+  .container .sidebar.show {
+    display: absolute;
+    top: 94px;
+    left: 0;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
   }
 }
 
@@ -131,7 +140,7 @@
   }
 }
 
-@media (max-width: 1112px) and (max-width: 753px) {
+@media (max-width: 1112px) and (max-width: 1112px) {
   .container .content__mobile .content__control-top .control__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -186,7 +195,7 @@
     content: "";
     position: absolute;
     top: -10px;
-    right: 80px;
+    right: 28px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -234,9 +243,9 @@
     background: linear-gradient(270deg, #151515 17%, #00000002 55%);
   }
   .container .content__mobile .content__messages_mobile .messages_mobile-list ul li:nth-child(5) {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
 }
 /*# sourceMappingURL=style_mobile.css.map */
