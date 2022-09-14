@@ -1,6 +1,10 @@
 .container{
-    .sidebar{
-        @media (max-width: 1112px) {
+    @media (max-width: 1112px) {
+        display: block;
+        width: 100%;
+        max-width: 1112px;
+        margin: 0 auto;
+        .sidebar{
             position: absolute;
             top: 94px;
             left:-250px;
@@ -18,7 +22,7 @@
         display: none;
         @media (max-width: 1112px) {
             display: block;
-            margin: 0 auto;
+            margin: 0 40px;
             .content__control-top{
                 display: flex;
                 justify-content: space-between;
@@ -64,7 +68,7 @@
                       }
                     } 
                   }
-                  form{
+                form{
                     width: 100%;
                     max-width: 123px;
                     position: relative;
@@ -112,11 +116,20 @@
                     justify-content:space-between;
                     li{
                         margin-right: 20px;
+                        @media (max-width: 800px) {
+                            margin-bottom: 10px;
+                            &:last-child{
+                                margin: 0;
+                            }
+                        }
                         &:first-child{
                             color:#FF5B5C;
                         }
                         &:nth-child(2){
                             margin-right: 92px;
+                            @media (max-width: 1112px) {
+                                margin-right: 20px;
+                            }
                         }
                         &:nth-child(3){
                             color:#DB9351;
@@ -125,96 +138,85 @@
                             margin: 0;
                         }
                     }
-                    @media (max-width: 753px) {
-                        li{
-                            margin-bottom: 10px;
-                            &:last-child{
-                                margin: 0;
-                            }
-                        }
+                    @media (max-width: 800px) {
+                        flex-direction: column;
                     }
                 }
             }
-            .content__messages_mobile{
-                .messages_mobile-list{
-                    ul{
-                       display: flex; 
-                       justify-content: space-between;
-                       padding: 20px 0;
-                       border: 1px solid #242424;
-                       border-left: none;
-                       border-right: none;
-                        li{
-                            &:first-child{
-                                padding-left: 31px;
-                                position: relative;
-                                background: url(../img/profile_1.png) no-repeat;
-                                background-position: 31px 0px;
-                                flex: 1;
-                                &::before{
-                                    content: "";
-                                    position: absolute;
-                                    top: -12px;
-                                    left: 19px;
-                                    width: 40px;
-                                    height: 40px;
-                                    border-radius: 50%;
-                                    background-color: #242424;
-                                    z-index: -1;
-                                }
-                                &.online::after {
-                                    content: "";
-                                    position: absolute;
-                                    top: -10px;
-                                    right: 59px;
-                                    width: 8px;
-                                    height: 8px;
-                                    border-radius:50%;
-                                    background-color: #ABDB51; 
-                                }
-                            }
-                            &:nth-child(2){
-                                flex: 2 1 0;
-                                text-decoration: underline;
-                                font-weight: bold;
-                            }
-                            &:nth-child(3).shop{
-                                width: 20px;
-                                background: url(../img/shopping_cart.svg) no-repeat;
-                                background-position-y: center;
-                                text-align: center;
-                                margin-right: -20px;
-                                @media (max-width: 753px) {
-                                    display: none;
-                                }
-                            }
-                            &:nth-child(4){
-                                position: relative;
-                                padding-left: 20px;
-                                flex: 5 1 0;
-                                &::before{
-                                    content: "";
-                                    position: absolute;
-                                    top: 0;
-                                    left:1px;
-                                    width: 100%;
-                                    height:17px;
-                                    background: #000;
-                                    background: linear-gradient(270deg, #151515 17%, #00000002 55%);;
-                                } 
-                            }
-                            &:nth-child(5){
-                                flex: 2;
-                            }
-                        }
-                    } 
-                } 
-            }
         }
     }
+    .content__messages{
+        .list__items{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            border: 1px solid #242424;
+            border-left: none;
+            border-right: none;
+           .item__icon{
+                padding-left: 31px;
+                position: relative;
+                background: url(../img/profile_1.png) no-repeat;
+                background-position: 31px 7px;
+                flex:1;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: -4px;
+                    left: 19px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #242424;
+                    z-index: -1;
+                }
+                &.online::after {
+                    content: "";
+                    position: absolute;
+                    top: -1px;
+                    right: 38px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius:50%;
+                    background-color: #ABDB51; 
+                }
+            }
+            .item__info{
+                flex: 12;
+                &:first-child{
+                    text-decoration: underline;
+                    font-weight: bold;  
+                }
+                &.shop{
+                    width: 20px;
+                    background: url(../img/shopping_cart.svg) no-repeat;
+                    background-position-y: center;
+                    text-align: center;
+                    margin-right: -20px;
+                    @media (max-width: 753px) {
+                        display: none;
+                    }
+                    &:first-child{
+                        position: relative;
+                        padding-left: 20px;  
+                    }
+                }
+            }
+            .item__data{
+                text-align: right;
+                flex:3;
+                &:last-child{
+                    flex: 2;
+                }
+            }
+        } 
+    } 
     .content__control-bottom{
+        margin: 0;
         ul{
             display: flex;
+            justify-content: center;
+            margin-top: 30px;
             li{
                 margin-right: 15px;
                 &:last-child{
