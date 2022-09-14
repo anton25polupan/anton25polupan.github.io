@@ -1,3 +1,7 @@
+.container {
+  width: 100%;
+}
+
 @media (max-width: 1112px) {
   .container .sidebar {
     position: absolute;
@@ -24,7 +28,6 @@
   .container .content__mobile {
     display: block;
     margin: 0 auto;
-    width: 85%;
   }
   .container .content__mobile .content__control-top {
     display: -webkit-box;

@@ -1,4 +1,5 @@
 .container{
+    width: 100%;
     .sidebar{
         @media (max-width: 1112px) {
             position: absolute;
@@ -19,7 +20,6 @@
         @media (max-width: 1112px) {
             display: block;
             margin: 0 auto;
-            width: 85%;
             .content__control-top{
                 display: flex;
                 justify-content: space-between;
