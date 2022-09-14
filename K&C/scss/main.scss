@@ -24,9 +24,10 @@ body{
         margin-right: 57px;
         background-color: #1D1C1C;
         white-space: nowrap;
-        &__list-item{
+        &__list-item {
             padding: 49px 99px 53px 30px;
             border-bottom: 1px solid #242424;
+            
             &:first-child{
                 position: relative;
                 padding: 0;

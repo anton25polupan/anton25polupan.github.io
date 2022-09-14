@@ -240,9 +240,7 @@
   position: relative;
   background: url(../img/profile_1.png) no-repeat;
   background-position: 31px 7px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 54px;
 }
 
 .container .content__messages .list__items .item__icon::before {
@@ -261,7 +259,7 @@
   content: "";
   position: absolute;
   top: -1px;
-  right: 38px;
+  right: -2px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -269,10 +267,10 @@
 }
 
 .container .content__messages .list__items .item__info {
-  padding-left: 60px;
-  -webkit-box-flex: 12;
-      -ms-flex: 12;
-          flex: 12;
+  padding-left: 40px;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
 }
 
 .container .content__messages .list__items .item__info:first-child {
