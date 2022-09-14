@@ -18,13 +18,13 @@
 
 .container .content__mobile {
   display: none;
-  width: 85%;
 }
 
 @media (max-width: 1112px) {
   .container .content__mobile {
     display: block;
-    margin: 0 30px;
+    margin: 0 auto;
+    width: 85%;
   }
   .container .content__mobile .content__control-top {
     display: -webkit-box;
@@ -171,12 +171,6 @@
 }
 
 @media (max-width: 1112px) and (max-width: 753px) {
-  .container .content__mobile .content__control-top .control__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .container .content__mobile .content__control-top .control__list li {
     margin-bottom: 10px;
   }

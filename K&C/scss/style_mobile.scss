@@ -16,10 +16,10 @@
     }
     .content__mobile{
         display: none;
-        width: 85%;
         @media (max-width: 1112px) {
             display: block;
-            margin: 0 30px;
+            margin: 0 auto;
+            width: 85%;
             .content__control-top{
                 display: flex;
                 justify-content: space-between;
@@ -127,7 +127,6 @@
                         }
                     }
                     @media (max-width: 753px) {
-                        flex-direction: column;
                         li{
                             margin-bottom: 10px;
                             &:last-child{

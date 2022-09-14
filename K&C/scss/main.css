@@ -76,9 +76,6 @@ body a {
 }
 
 .container .content__desktop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 40px;
 }
 
