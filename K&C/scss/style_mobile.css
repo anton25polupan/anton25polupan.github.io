@@ -29,7 +29,7 @@
 @media (max-width: 1112px) {
   .container .content__mobile {
     display: block;
-    margin: 0 40px;
+    margin: 0 10px;
   }
   .container .content__mobile .content__control-top {
     display: -webkit-box;
