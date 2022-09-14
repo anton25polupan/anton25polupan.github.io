@@ -1,7 +1,3 @@
-.container {
-  width: 100%;
-}
-
 @media (max-width: 1112px) {
   .container .sidebar {
     position: absolute;
