@@ -162,7 +162,7 @@
             border: 1px solid #242424;
             border-left: none;
             border-right: none;
-           .item__icon{
+           .item__photo{
                 position: relative;
                 background: url(../img/profile_1.png) no-repeat;
                 background-position: 31px 7px;
@@ -195,20 +195,6 @@
                 &:first-child{
                     text-decoration: underline;
                     font-weight: bold;  
-                }
-                &.shop{
-                    width: 20px;
-                    background: url(../img/shopping_cart.svg) no-repeat;
-                    background-position-y: center;
-                    text-align: center;
-                    margin-right: -20px;
-                    @media (max-width: 753px) {
-                        display: none;
-                    }
-                    &:first-child{
-                        position: relative;
-                        padding-left: 20px;  
-                    }
                 }
             }
             .item__data{

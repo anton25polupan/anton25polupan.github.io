@@ -93,10 +93,6 @@ body a {
   font-weight: bold;
 }
 
-.container .content__desktop {
-  margin-bottom: 40px;
-}
-
 .container .content__desktop .content {
   width: 819px;
 }

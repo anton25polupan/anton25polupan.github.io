@@ -236,14 +236,14 @@
   border-right: none;
 }
 
-.container .content__messages .list__items .item__icon {
+.container .content__messages .list__items .item__photo {
   position: relative;
   background: url(../img/profile_1.png) no-repeat;
   background-position: 31px 7px;
   width: 54px;
 }
 
-.container .content__messages .list__items .item__icon::before {
+.container .content__messages .list__items .item__photo::before {
   content: "";
   position: absolute;
   top: -4px;
@@ -255,7 +255,7 @@
   z-index: -1;
 }
 
-.container .content__messages .list__items .item__icon.online::after {
+.container .content__messages .list__items .item__photo.online::after {
   content: "";
   position: absolute;
   top: -1px;
@@ -276,25 +276,6 @@
 .container .content__messages .list__items .item__info:first-child {
   text-decoration: underline;
   font-weight: bold;
-}
-
-.container .content__messages .list__items .item__info.shop {
-  width: 20px;
-  background: url(../img/shopping_cart.svg) no-repeat;
-  background-position-y: center;
-  text-align: center;
-  margin-right: -20px;
-}
-
-@media (max-width: 753px) {
-  .container .content__messages .list__items .item__info.shop {
-    display: none;
-  }
-}
-
-.container .content__messages .list__items .item__info.shop:first-child {
-  position: relative;
-  padding-left: 20px;
 }
 
 .container .content__messages .list__items .item__data {
