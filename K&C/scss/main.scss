@@ -20,19 +20,20 @@ body{
     margin-bottom: 227px;
     display: flex;
     .sidebar{
-        width: 220px;
         margin-right: 57px;
         background-color: #1D1C1C;
         white-space: nowrap;
         &__list-item {
-            padding: 49px 99px 53px 30px;
+            padding: 49px 39px 53px 30px;
             border-bottom: 1px solid #242424;
-            
             &:first-child{
                 position: relative;
                 padding: 0;
                 border: 1px solid #DB9351;
                 overflow: hidden;
+                img{
+                    display: block;
+                }
                 &::after{
                     content:"";
                     position: absolute;
@@ -43,11 +44,22 @@ body{
                     height: 13px;
                 }
             }
+            &:nth-child(2){
+                padding: 0;
+                a{
+                    display: block;
+                    padding:49px 39px 53px 30px;  
+                }
+            }
             &:last-child{
                 background-color: #DB9351;
                 font-weight: bold;
                 text-align: center;
-                padding: 53px 43px;
+                padding: 0;
+                a{
+                    display: block;
+                    padding: 53px 43px;
+                }
             }
             span{
                 margin-left: 60px;

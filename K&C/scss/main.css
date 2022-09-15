@@ -24,14 +24,13 @@ body a {
 }
 
 .container .sidebar {
-  width: 220px;
   margin-right: 57px;
   background-color: #1D1C1C;
   white-space: nowrap;
 }
 
 .container .sidebar__list-item {
-  padding: 49px 99px 53px 30px;
+  padding: 49px 39px 53px 30px;
   border-bottom: 1px solid #242424;
 }
 
@@ -40,6 +39,10 @@ body a {
   padding: 0;
   border: 1px solid #DB9351;
   overflow: hidden;
+}
+
+.container .sidebar__list-item:first-child img {
+  display: block;
 }
 
 .container .sidebar__list-item:first-child::after {
@@ -52,10 +55,24 @@ body a {
   height: 13px;
 }
 
+.container .sidebar__list-item:nth-child(2) {
+  padding: 0;
+}
+
+.container .sidebar__list-item:nth-child(2) a {
+  display: block;
+  padding: 49px 39px 53px 30px;
+}
+
 .container .sidebar__list-item:last-child {
   background-color: #DB9351;
   font-weight: bold;
   text-align: center;
+  padding: 0;
+}
+
+.container .sidebar__list-item:last-child a {
+  display: block;
   padding: 53px 43px;
 }
 
