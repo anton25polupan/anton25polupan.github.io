@@ -193,6 +193,12 @@ body a {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 730px) {
+  .container .content .content__wrapper {
+    padding: 0;
+  }
+}
+
 .container .content .content__wrapper .content__header {
   display: -webkit-box;
   display: -ms-flexbox;
