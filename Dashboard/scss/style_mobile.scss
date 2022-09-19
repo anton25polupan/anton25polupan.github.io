@@ -118,6 +118,9 @@
                     @media (max-width: 992px) {
                         font-size: 12px;
                     }
+                    @media (max-width: 380px) {
+                        font-size: 10px;
+                    }
                     &:first-child{
                         flex:1;
                     }
@@ -162,6 +165,9 @@
                 letter-spacing: -0.01em;
                 @media (max-width: 800px) {
                     font-size: 12px;
+                }
+                @media (max-width: 380px) {
+                    font-size: 10px;
                 }
                 &.active{
                     width: 80px;

@@ -169,6 +169,14 @@
   }
 }
 
+@media (max-width: 380px) {
+  .container .content__data-list .list__item .list__item-name li,
+  .container .content__data-list .list__item .list__item-contacts li,
+  .container .content__data-list .list__item .list__item-other li {
+    font-size: 10px;
+  }
+}
+
 .container .content__data-list .list__item .list__item-name li:first-child,
 .container .content__data-list .list__item .list__item-contacts li:first-child,
 .container .content__data-list .list__item .list__item-other li:first-child {
@@ -261,6 +269,12 @@
 @media (max-width: 800px) {
   .container .content__data-list .list__item button {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container .content__data-list .list__item button {
+    font-size: 10px;
   }
 }
 
