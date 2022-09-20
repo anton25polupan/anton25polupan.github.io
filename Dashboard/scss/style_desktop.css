@@ -197,7 +197,7 @@ body a {
 
 @media screen and (max-width: 1200px) {
   .container .content .content__wrapper {
-    padding: 0;
+    padding: 0 15px;
   }
 }
 
