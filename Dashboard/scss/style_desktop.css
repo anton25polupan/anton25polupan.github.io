@@ -211,6 +211,12 @@ body a {
   }
 }
 
+@media screen and (max-width: 860px) {
+  .container .content .content__wrapper::before {
+    top: 210px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .container .content .content__wrapper::before {
     top: 212px;
