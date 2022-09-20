@@ -309,6 +309,10 @@ body a {
   font-size: 12px;
 }
 
+.container .content .content__wrapper .content__header form input:focus {
+  outline: 2px solid #000000;
+}
+
 .container .content .content__wrapper .content__header form::before {
   content: "";
   position: absolute;
