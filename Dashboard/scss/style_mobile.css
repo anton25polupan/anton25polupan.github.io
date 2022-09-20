@@ -89,11 +89,17 @@
   top: calc(50% + 5px);
 }
 
+@media screen and (max-width: 1200px) {
+  .container .content .content__wrapper .content__header {
+    margin: 0 10px;
+  }
+}
+
 .container .content .content__wrapper .content__mobile {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .container .content .content__wrapper .content__mobile {
     display: block;
     margin: 0 10px;
@@ -169,7 +175,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   .container .content .content__wrapper .content__mobile .content__data-list .content__item .content__item-name li,
   .container .content .content__wrapper .content__mobile .content__data-list .content__item .content__item-contacts li,
   .container .content .content__wrapper .content__mobile .content__data-list .content__item .content__item-other li {
@@ -249,11 +255,29 @@
           flex: 2;
 }
 
-@media (max-width: 865px) {
+@media screen and (max-width: 865px) {
   .container .content .content__wrapper .content__mobile .content__data-list .content__item .content__item-other {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .container .content .content__wrapper .content__mobile .content__data-list .content__item .content__item-name {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .container .content .content__wrapper .content__mobile .content__data-list .content__item .content__item-contacts {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .container .content .content__wrapper .content__mobile .content__data-list .content__item .content__item-other {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
 }
 
@@ -266,13 +290,7 @@
   letter-spacing: -0.01em;
 }
 
-@media (max-width: 800px) {
-  .container .content .content__wrapper .content__mobile .content__data-list .content__item button {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 380px) {
+@media screen and (max-width: 800px) {
   .container .content .content__wrapper .content__mobile .content__data-list .content__item button {
     font-size: 10px;
   }
