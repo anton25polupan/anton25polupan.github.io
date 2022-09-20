@@ -3,7 +3,7 @@ body a {
 }
 
 .container {
-  max-width: 1442px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -29,7 +29,7 @@ body a {
 .container .sidebar h1 {
   margin: 36px 0 52px 31px;
   position: relative;
-  padding-left: 48px;
+  padding-left: 44px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -61,7 +61,7 @@ body a {
 
 .container .sidebar__list-items {
   padding: 0 28px;
-  min-height: 1080px;
+  min-height: 954px;
 }
 
 .container .sidebar__list-items a {
@@ -69,10 +69,8 @@ body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 23px 0 23px 0;
+  margin-bottom: 10px;
+  padding: 12px 0;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -100,33 +98,35 @@ body a {
 }
 
 .container .sidebar__list-items a span + span {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
+  margin-left: 14px;
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
 }
 
 .container .sidebar__list-items a span + span + span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-top: 4px;
 }
 
-.container .sidebar footer {
+.container .sidebar .sidebar__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 76px;
 }
 
-.container .sidebar footer .sidebar__footer_img {
-  margin-left: 28px;
+.container .sidebar .sidebar__footer .sidebar__footer-img {
+  margin-left: 29px;
 }
 
-.container .sidebar footer .sidebar__footer_info {
-  margin-left: 12px;
+.container .sidebar .sidebar__footer .sidebar__footer-info {
+  margin-left: 13px;
 }
 
-.container .sidebar footer .sidebar__footer_info .info-username {
+.container .sidebar .sidebar__footer .sidebar__footer-info .sidebar__username {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -135,7 +135,7 @@ body a {
   letter-spacing: 0.01em;
 }
 
-.container .sidebar footer .sidebar__footer_info .info-description {
+.container .sidebar .sidebar__footer .sidebar__footer-info .sidebar__description {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -146,7 +146,7 @@ body a {
 }
 
 .container .content {
-  width: 1134px;
+  width: auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -187,6 +187,7 @@ body a {
 }
 
 .container .content .content__wrapper {
+  width: auto;
   position: relative;
   padding: 0 40px;
   -webkit-box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
@@ -197,7 +198,7 @@ body a {
 .container .content .content__wrapper::before {
   content: "";
   position: absolute;
-  top: 228px;
+  top: 165px;
   left: 0;
   width: 100%;
   height: 1px;
@@ -206,7 +207,13 @@ body a {
 
 @media (max-width: 1200px) {
   .container .content .content__wrapper::before {
-    top: 220px;
+    top: 209px;
+  }
+}
+
+@media (max-width: 636px) {
+  .container .content .content__wrapper::before {
+    top: 280px;
   }
 }
 
@@ -229,6 +236,7 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 637px) {
@@ -255,7 +263,7 @@ body a {
 
 .container .content .content__wrapper .content__header p + p {
   padding: 0;
-  margin: 7px 0 68px 0;
+  margin-top: 7px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -267,19 +275,18 @@ body a {
 
 .container .content .content__wrapper .content__header form {
   position: relative;
-  margin-right: 20px;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 800px) {
-  .container .content .content__wrapper .content__header form {
-    margin-top: -50px;
-  }
+  margin-top: 34px;
+  margin-right: 10px;
 }
 
 .container .content .content__wrapper .content__header form input {
-  padding: 10px 29px 10px 40px;
-  color: #000000;
+  padding: 10px 12px 10px 41px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #B5B7C0;
   text-align: left;
   background: #F9FBFF;
   border-radius: 10px;
@@ -287,25 +294,25 @@ body a {
 }
 
 .container .content .content__wrapper .content__header form input::-webkit-input-placeholder {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .container .content .content__wrapper .content__header form input:-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .container .content .content__wrapper .content__header form input::-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .container .content .content__wrapper .content__header form input::placeholder {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .container .content .content__wrapper .content__header form::before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 10px;
   background: url(../img/search.svg) no-repeat;
   width: 30px;
@@ -338,8 +345,7 @@ body a {
 }
 
 .container .content .content__wrapper .content__desktop_data table thead tr th {
-  height: 69px;
-  vertical-align: middle;
+  height: 35px;
 }
 
 .container .content .content__wrapper .content__desktop_data table thead tr th:last-child {
@@ -352,7 +358,7 @@ body a {
 }
 
 .container .content .content__wrapper .content__desktop_data table tbody tr td {
-  height: 69px;
+  height: 68px;
   vertical-align: middle;
   color: #292D32;
 }
@@ -396,15 +402,27 @@ body a {
   color: #DF0404;
 }
 
+.container .content .content__wrapper .content__desktop_data table tbody tr td:first-child {
+  width: 170px;
+}
+
 .container .content .content__wrapper .content__desktop_data table tbody tr td:nth-child(2) {
   width: 131px;
 }
 
-.container .content .content__wrapper .content__desktop_data table tbody tr td:nth-child(4) {
-  width: 207px;
+.container .content .content__wrapper .content__desktop_data table tbody tr td:nth-child(3) {
+  width: 158px;
 }
 
-.container .content__control-bottom {
+.container .content .content__wrapper .content__desktop_data table tbody tr td:nth-child(4) {
+  width: 205px;
+}
+
+.container .content .content__wrapper .content__desktop_data table tbody tr td:nth-child(5) {
+  width: 140px;
+}
+
+.container .content .content__wrapper .content__control-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,7 +432,7 @@ body a {
   padding: 30px 0 40px 0;
 }
 
-.container .content__control-bottom span {
+.container .content .content__wrapper .content__control-bottom span {
   margin-right: 12px;
   font-family: 'Poppins';
   font-style: normal;
@@ -425,24 +443,27 @@ body a {
   color: #B5B7C0;
 }
 
-.container .content__control-bottom .control-bottom-pages {
+.container .content .content__wrapper .content__control-bottom .control__pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container .content__control-bottom .control-bottom-pages li {
-  position: relative;
+.container .content .content__wrapper .content__control-bottom .control__pages li {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 100%;
+  margin-right: 7px;
   list-style: none;
-  margin-right: 12px;
 }
 
-.container .content__control-bottom .control-bottom-pages li a {
+.container .content .content__wrapper .content__control-bottom .control__pages li:last-child {
+  margin: 0;
+}
+
+.container .content .content__wrapper .content__control-bottom .control__pages li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,18 +481,18 @@ body a {
   color: #404B52;
 }
 
-.container .content__control-bottom .control-bottom-pages li.focus a {
+.container .content .content__wrapper .content__control-bottom .control__pages li.focus a {
   background: #5932EA;
   border: 1px solid #5932EA;
   border-radius: 4px;
   color: #FFFFFF;
 }
 
-.container .content__control-bottom .control-bottom-pages li.focus a path {
+.container .content .content__wrapper .content__control-bottom .control__pages li.focus a path {
   fill: #FFFFFF;
 }
 
-.container .content__control-bottom .control-bottom-pages span {
+.container .content .content__wrapper .content__control-bottom .control__pages span {
   margin-top: 3px;
   color: #000000;
 }
