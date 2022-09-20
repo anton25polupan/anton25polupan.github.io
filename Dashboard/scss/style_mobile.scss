@@ -194,15 +194,18 @@
                     } 
                 }
             }
+            .content__control-bottom {
+                @media screen and (max-width: 1200px) {
+                    margin: 0 9px;
+                }
+                @media screen and (max-width: 800px) {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    span{
+                        margin-top: 20px;
+                    }
+                }
+            } 
         }
-    }
-    .content__control-bottom {
-        @media screen and (max-width: 800px) {
-            flex-direction: column-reverse;
-            align-items: center;
-            span{
-                margin-top: 20px;
-            }
-        }
-    }       
+    }      
 }

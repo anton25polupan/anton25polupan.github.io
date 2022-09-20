@@ -304,8 +304,14 @@
   color: #DF0404;
 }
 
+@media screen and (max-width: 1200px) {
+  .container .content .content__wrapper .content__control-bottom {
+    margin: 0 9px;
+  }
+}
+
 @media screen and (max-width: 800px) {
-  .container .content__control-bottom {
+  .container .content .content__wrapper .content__control-bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -314,7 +320,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .content__control-bottom span {
+  .container .content .content__wrapper .content__control-bottom span {
     margin-top: 20px;
   }
 }

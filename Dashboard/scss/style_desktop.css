@@ -65,12 +65,11 @@ body a {
 }
 
 .container .sidebar__list-items a {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px;
-  padding: 12px 0;
+  margin-bottom: 18px;
+  padding: 9px 0 7px 0;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -98,6 +97,7 @@ body a {
 }
 
 .container .sidebar__list-items a span + span {
+  padding-top: 3px;
   margin-left: 14px;
   -webkit-box-flex: 7;
       -ms-flex: 7;
@@ -108,7 +108,7 @@ body a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .container .sidebar .sidebar__footer {
@@ -205,13 +205,19 @@ body a {
   background-color: #EEEEEE;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .container .content .content__wrapper::before {
-    top: 209px;
+    top: 185px;
   }
 }
 
-@media (max-width: 636px) {
+@media screen and (max-width: 800px) {
+  .container .content .content__wrapper::before {
+    top: 212px;
+  }
+}
+
+@media screen and (max-width: 636px) {
   .container .content .content__wrapper::before {
     top: 280px;
   }
