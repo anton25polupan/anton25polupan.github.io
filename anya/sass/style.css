@@ -362,7 +362,7 @@ header .header__intro .intro__inner-info .intro__subtitle {
   line-height: 60px;
   color: #252A34;
   text-align: left;
-  margin-right: 30px;
+  margin-right: 71px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -672,6 +672,19 @@ header .header__intro .intro__inner-img img {
   }
 }
 
+.section-winners .container p {
+  margin: 60px 0;
+  font-size: 18px;
+}
+
+.section-winners .container p:first-child {
+  margin-bottom: 20px;
+}
+
+.section-winners .container p:last-child {
+  margin-top: 0;
+}
+
 .section-winners .container .card__item {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -685,10 +698,6 @@ header .header__intro .intro__inner-img img {
           transform: scale(1.05);
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-}
-
-.section-winners .container .card__item:last-child {
-  margin: 0 auto;
 }
 
 .section-winners .container .item__info {
