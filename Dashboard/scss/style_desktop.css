@@ -429,7 +429,7 @@ body a {
   width: 140px;
 }
 
-.container .content .content__wrapper .content__control-bottom {
+.container .content .content__wrapper .content__wrapper_control-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,7 +439,7 @@ body a {
   padding: 30px 0 40px 0;
 }
 
-.container .content .content__wrapper .content__control-bottom span {
+.container .content .content__wrapper .content__wrapper_control-bottom span {
   margin-right: 12px;
   font-family: 'Poppins';
   font-style: normal;
@@ -450,13 +450,13 @@ body a {
   color: #B5B7C0;
 }
 
-.container .content .content__wrapper .content__control-bottom .control__pages {
+.container .content .content__wrapper .content__wrapper_control-bottom .control__pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container .content .content__wrapper .content__control-bottom .control__pages li {
+.container .content .content__wrapper .content__wrapper_control-bottom .control__pages li {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -466,11 +466,11 @@ body a {
   list-style: none;
 }
 
-.container .content .content__wrapper .content__control-bottom .control__pages li:last-child {
+.container .content .content__wrapper .content__wrapper_control-bottom .control__pages li:last-child {
   margin: 0;
 }
 
-.container .content .content__wrapper .content__control-bottom .control__pages li a {
+.container .content .content__wrapper .content__wrapper_control-bottom .control__pages li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,18 +488,18 @@ body a {
   color: #404B52;
 }
 
-.container .content .content__wrapper .content__control-bottom .control__pages li.focus a {
+.container .content .content__wrapper .content__wrapper_control-bottom .control__pages li.focus a {
   background: #5932EA;
   border: 1px solid #5932EA;
   border-radius: 4px;
   color: #FFFFFF;
 }
 
-.container .content .content__wrapper .content__control-bottom .control__pages li.focus a path {
+.container .content .content__wrapper .content__wrapper_control-bottom .control__pages li.focus a path {
   fill: #FFFFFF;
 }
 
-.container .content .content__wrapper .content__control-bottom .control__pages span {
+.container .content .content__wrapper .content__wrapper_control-bottom .control__pages span {
   margin-top: 3px;
   color: #000000;
 }
